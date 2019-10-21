@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>CO3098_CW2_yz360</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+<servlet>
+	<servlet-name>MainPage</servlet-name>
+	<servlet-class>coursework2.MainPageServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>MainPage</servlet-name>
+	<url-pattern>/servlets/MainPageServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>RegistrationPage</servlet-name>
+	<servlet-class>coursework2.RegistrationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>RegistrationPage</servlet-name>
+	<url-pattern>/servlets/RegistrationServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>SuccessfullyRegistered</servlet-name>
+	<servlet-class>coursework2.SuccessfullyRegisteredServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SuccessfullyRegistered</servlet-name>
+	<url-pattern>/servlets/SuccessfullyRegisteredServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>Login</servlet-name>
+	<servlet-class>coursework2.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Login</servlet-name>
+	<url-pattern>/servlets/LoginServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>LoginProcess</servlet-name>
+	<servlet-class>coursework2.LoginProcessServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LoginProcess</servlet-name>
+	<url-pattern>/servlets/LoginProcessServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Logout</servlet-name>
+	<servlet-class>coursework2.LogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Logout</servlet-name>
+	<url-pattern>/servlets/LogoutServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>CreatePetitions</servlet-name>
+	<servlet-class>coursework2.CreatePetitionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>CreatePetitions</servlet-name>
+	<url-pattern>/servlets/CreatePetition</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Petitions</servlet-name>
+	<servlet-class>coursework2.SuccessfullyCreatePetitionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Petitions</servlet-name>
+	<url-pattern>/servlets/SuccessfullyCreatePetitionServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Sign</servlet-name>
+	<servlet-class>coursework2.SignServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Sign</servlet-name>
+	<url-pattern>/servlets/SignServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>Edit</servlet-name>
+	<servlet-class>coursework2.EditServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Edit</servlet-name>
+	<url-pattern>/servlets/EditServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>update</servlet-name>
+	<servlet-class>coursework2.SuccessfullyUpdatePetition</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>update</servlet-name>
+	<url-pattern>/servlets/UpdatePetition</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Comment</servlet-name>
+	<servlet-class>coursework2.CreateCommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Comment</servlet-name>
+	<url-pattern>/servlets/CommentServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>sComment</servlet-name>
+	<servlet-class>coursework2.SuccessfullyAddCommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>sComment</servlet-name>
+	<url-pattern>/servlets/SuccessfullyAddCommentServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>vComment</servlet-name>
+	<servlet-class>coursework2.ViewCommentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>vComment</servlet-name>
+	<url-pattern>/servlets/ViewCommentServlet</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
