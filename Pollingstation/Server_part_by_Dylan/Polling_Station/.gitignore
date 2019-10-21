@@ -1,0 +1,6 @@
+/.gradle/
+/.idea/
+/build/
+/out/
+/src/main/webapp/WEB-INF/jstl-1.2.jar/
+*.iml

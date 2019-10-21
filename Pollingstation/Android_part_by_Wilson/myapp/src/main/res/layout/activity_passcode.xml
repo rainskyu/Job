@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true">
+
+
+    <TextView
+    android:id="@+id/passcode_iddisplay"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:padding="16dp"
+    android:textAllCaps="true"
+    android:textColor="#FFFFFF"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passcode_passcodeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/passcode_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/passcode_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="481dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="481dp"
+        android:layout_marginBottom="96dp"
+        android:text="@string/passcode_title"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        app:layout_constraintBottom_toTopOf="@+id/passcode_passcodeValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/passcode_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginBottom="234dp"
+        android:text="@string/passcode_start"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passcode_passcodeValue" />
+
+</android.support.constraint.ConstraintLayout>

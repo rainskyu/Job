@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="verification_controller">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="1100.0" pickOnBounds="true">
+         <image>
+            <Image url="@start_interface.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="tallyresult" layoutX="258.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#showresult" prefHeight="30.0" prefWidth="187.0" text="Tally Result" />
+      <Button fx:id="verifytr" layoutX="21.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#verifytally" prefHeight="29.0" prefWidth="187.0" text="Verify Tally Results">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="verifyab" layoutX="21.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#verifyauditballot" prefHeight="29.0" prefWidth="187.0" text="Verify Audit Ballots">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="verifyeqkp" layoutX="21.0" layoutY="440.0" mnemonicParsing="false" onMouseClicked="#verifysecondzeroknowledgeproof" prefHeight="29.0" prefWidth="424.0" text="Verify Equality Zero-Knowledge-Proof for confirmed ballots">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="verifyzkp" layoutX="21.0" layoutY="390.0" mnemonicParsing="false" onMouseClicked="#verifyzeroknowledgeproof" prefHeight="29.0" prefWidth="424.0" text="Verify Zero-Knowledge-Proof for all ballots">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="verifys" layoutX="258.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#verifysignature" prefHeight="29.0" prefWidth="187.0" text="Verify Signature">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="verifytallyincorrect" layoutX="90.0" layoutY="215.0" prefHeight="23.0" prefWidth="286.0" text="Verify Tally Result: Result incorrect" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifytallycorrect" layoutX="99.0" layoutY="215.0" prefHeight="23.0" prefWidth="268.0" text="Verify Tally Result: Result correct" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifyauditcorrect" layoutX="90.0" layoutY="215.0" prefHeight="23.0" prefWidth="286.0" text="Verify Audit Ballots: Result correct" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifyauditincorrect" layoutX="86.0" layoutY="215.0" prefHeight="23.0" prefWidth="295.0" text="Verify Audit Ballots: Result incorrect" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifysignaturecorrect" layoutX="105.0" layoutY="215.0" prefHeight="23.0" prefWidth="256.0" text="Verify Signature: Result correct" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifysignatureincorrect" layoutX="100.0" layoutY="215.0" prefHeight="23.0" prefWidth="268.0" text="Verify Signature: Result incorrect" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifyzkpincorrect" layoutX="123.0" layoutY="215.0" prefHeight="23.0" prefWidth="220.0" text="Verify ZKP: Result incorrect" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifyzkpcorrect" layoutX="131.0" layoutY="215.0" prefHeight="23.0" prefWidth="205.0" text="Verify ZKP: Result correct" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifyszkpcorrect" layoutX="94.0" layoutY="215.0" prefHeight="23.0" prefWidth="280.0" text="Verify Equality-ZKP: Result correct" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="verifyszkpincorrect" layoutX="87.0" layoutY="215.0" prefHeight="23.0" prefWidth="295.0" text="Verify Equality-ZKP: Result incorrect" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

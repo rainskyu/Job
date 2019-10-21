@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.newcastle.dre_ip.fragment.Server_Fragment"
+    android:weightSum="5">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/serverAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/serverAdd"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/serverName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/serverName2"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/serverNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Alias"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorPrimaryDark" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:padding="16dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/serverAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="@string/serverAddress"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/serverAddressValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="Please input full address of server"
+                android:inputType="textWebEmailAddress"
+                android:textColorHint="@color/colorPrimaryDark" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/serverInformationSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:padding="32dp"
+                android:text="@string/serverInformationSubmit"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="3dp"
+        android:layout_height="fill_parent"
+        android:layout_margin="16dp"
+        android:background="@color/colorLightBlue"
+        android:layout_gravity="center_vertical"
+        android:text=" " />
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/serverList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/serverList"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/serverListInstruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/serverListinstruction"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/serverListValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

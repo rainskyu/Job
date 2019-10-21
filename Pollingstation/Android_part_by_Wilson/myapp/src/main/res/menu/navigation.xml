@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_server"
+        android:icon="@drawable/ic_server_black_24dp"
+        android:title="@string/title_server" />
+
+    <item
+        android:id="@+id/navigation_vote"
+        android:icon="@drawable/ic_vote_black_24dp"
+        android:title="@string/title_vote" />
+
+    <item
+        android:id="@+id/navigation_printer"
+        android:icon="@drawable/ic_printer_black_24dp"
+        android:title="@string/title_printer" />
+</menu>

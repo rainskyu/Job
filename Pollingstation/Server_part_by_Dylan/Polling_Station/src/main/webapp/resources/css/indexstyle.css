@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+//background: -webkit-radial-gradient(20%, ellipse cover, #d9d6d8 0%, #cbe6ea 100%);   
+h1{position: fixed;
+	height:50px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;}
+body{background-color: #fff;}
+#form{position: absolute;top: 30%;left:40%;background-color:#ffffff; vertical-align:middle; min-height:300px; min-width:400px; }
+#coord{position:relative ;}
+
+body { 
+		background-color: #005799;                                                                      /* median color for gradient */
+        background: -webkit-radial-gradient(33%, ellipse cover, #8ab1c4 0%, #30688b 100%);   
+               
+        //color: #124f90 ;
+		color:#fff;
+		font-family: "Palatino Linotype", "Book Antiqua", Palatino, seri
+      }
+#main{padding-top:20px; padding-bottom:20px}
+#main-form {
+	background-color:rgba(13,17,33,0.3);
+	box-shadow: 0 1px 2px rgba(0,0,30,0.7);
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 550px;
+      }
+	 #logo{text-align:center; margin-bottom: 10px; width: auto; opacity: 0.9 }
+	 
+
+footer {
+	padding: 20px;
+	
+      }
+
+.homebtns{text-align: center;}
+
+.form-label {
+	font-size: 125%;		
+      }
+@media (min-width: 483px) {
+      #title {
+	font-size: 200%;
+	padding: 10px;
+	line-height: 105%;
+      }
+}
+.control-group {
+	padding: 10px;	
+      }
+label {
+	font-weight: bold;	
+      }
+
+      #title, #sub {
+	text-shadow: 0px 2px 3px #003863;
+      }
+
+      footer, label, #title, #sub {
+	text-align: center;
+      }
+
+#button-area{ text-align: center; padding: 5px}  
+      
+fieldset{border:0px}
+
+#ballot, #sessionID{border-radius: 3px; border:0px; font-size:18px; padding:5px;width: 500px;}
+#password, #username{border-radius: 3px; border:0px; font-size:18px; padding:5px;width: 500px;}
+#view-bulletin-board, #view-results{ background-color:#900; border:0px;-webkit-box-shadow:inset 3px 3px 3px rgba(100,0,0,0.7);border-radius:3px;color:#eee;padding:10px;margin:7px; m font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;text-shadow:0 1px 1px #700; width: 243px; font-size:14px}
+
+ a{text-decoration:none;color:#fff;text-shadow:0.5px 0.5px 0 #777}
+
+      /* Tweaks for smartphone and tablet devices respectively */
+ @media(max-width: 979px) {
+	body{ padding: 0; }
+	#main-form { width: 450px; }
+	#ballot, #sessionID{width: 400px;}
+	#password, #username{width: 400px;}
+	#view-bulletin-board, #view-results{ width: 180px;}
+	
+	
+    }		
+@media(max-width: 482px) {
+	#main{padding-top:0px}
+    #main-form { width: auto; }
+	#ballot, #sessionID{width: 320px;}
+	#password, #username{width: 320px;}
+	#view-bulletin-board, #view-results{ width: 100px;padding:5px;height:30px}
+	#title { font-size: 20px; }
+	#sub { font-size: 12px  }
+	.form-horizontal .control-group {padding: 10px;	margin-bottom:10px}
+	h1,h2 {	line-height: 30px; margin:0}
+            #sub-buttons > a {
+	margin: 5px;
+	width: 100px;
+      }
+	.form-label { font-size:100%}
+      #big-button{ width: 250px; font-size: 150%;}
+	  }
+   

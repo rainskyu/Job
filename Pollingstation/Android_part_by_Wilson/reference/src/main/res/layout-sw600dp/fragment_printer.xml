@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#FFFFFF">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:padding="16dp"
+            android:text="@string/btn_restart"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/noPrinter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:padding="16dp"
+            android:text="@string/noprinter"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@color/colorCancel"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/txtList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/title_printerlist"
+        android:textAllCaps="true"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/lstReceiveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffffff">
+    </ListView>
+
+</LinearLayout>

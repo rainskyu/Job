@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.newcastle.dre_ip.fragment.MainPage_Fragment">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/serverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/serverName"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/serverInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/serverName"
+                android:layout_alignBottom="@+id/serverName"
+                android:layout_alignStart="@+id/printerInfo"
+                android:padding="16dp"
+                android:text="@string/serverInfo"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/printerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/printerInfo"
+                android:padding="16dp"
+                android:text="@string/printerName"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/printerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/serverName"
+                android:layout_toEndOf="@+id/enter"
+                android:padding="16dp"
+                android:text="@string/printerInfo"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/warning"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/table"
+        android:background="@color/colorPrimary"
+        android:text=" "
+        android:layout_margin="16dp"/>
+
+    <TableLayout
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/space"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/electionID"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/electionID"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/password"
+                android:layout_alignStart="@+id/title"
+                android:layout_weight="5"
+                android:hint="@string/electionid"
+                android:inputType="number"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/enter" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_margin="32dp"
+                android:padding="32dp"
+                android:text="@string/enter"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
