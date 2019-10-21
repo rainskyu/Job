@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangManButtonController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="850.0">
+         <image>
+            <Image url="@14444279.jpg" />
+         </image>
+      </ImageView>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0">
+         <children>
+         <Button fx:id="buttonA" disable="true" layoutX="549.0" layoutY="281.0" mnemonicParsing="false" onMousePressed="#buttonAEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="1" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@A_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonB" disable="true" layoutX="597.0" layoutY="281.0" mnemonicParsing="false" onMousePressed="#buttonBEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="2" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@B_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonC" disable="true" layoutX="645.0" layoutY="281.0" mnemonicParsing="false" onMousePressed="#buttonCEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="3" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@C_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonD" disable="true" layoutX="693.0" layoutY="281.0" mnemonicParsing="false" onMousePressed="#buttonDEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="4" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@D_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+         <Button fx:id="buttonE" disable="true" layoutX="549.0" layoutY="321.0" mnemonicParsing="false" onMousePressed="#buttonEEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="5" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@E_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonF" disable="true" layoutX="597.0" layoutY="321.0" mnemonicParsing="false" onMousePressed="#buttonFEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="6" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@F_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonG" disable="true" layoutX="645.0" layoutY="321.0" mnemonicParsing="false" onMousePressed="#buttonGEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="7" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@G_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonH" disable="true" layoutX="693.0" layoutY="321.0" mnemonicParsing="false" onMousePressed="#buttonHEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="8" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@H_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonI" disable="true" layoutX="549.0" layoutY="361.0" mnemonicParsing="false" onMousePressed="#buttonIEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="9" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@I_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonJ" disable="true" layoutX="597.0" layoutY="361.0" mnemonicParsing="false" onMousePressed="#buttonJEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="10" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@J_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+         <Button fx:id="buttonK" disable="true" layoutX="645.0" layoutY="361.0" mnemonicParsing="false" onMousePressed="#buttonKEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="11" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@K_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+         <Button fx:id="buttonL" disable="true" layoutX="693.0" layoutY="361.0" mnemonicParsing="false" onMousePressed="#buttonLEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="12" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@L_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonM" disable="true" layoutX="549.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#buttonMEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="13" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@M_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+         <Button fx:id="buttonN" disable="true" layoutX="597.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#buttonNEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="14" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@N_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+         <Button fx:id="buttonO" disable="true" layoutX="645.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#buttonOEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="15" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@O_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+         <Button fx:id="buttonP" disable="true" layoutX="693.0" layoutY="401.0" mnemonicParsing="false" onMousePressed="#buttonPEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="16" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@P_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+         <Button fx:id="buttonQ" disable="true" layoutX="549.0" layoutY="441.0" mnemonicParsing="false" onMousePressed="#buttonQEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="17" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@Q_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+         <Button fx:id="buttonR" disable="true" layoutX="597.0" layoutY="441.0" mnemonicParsing="false" onMousePressed="#buttonREvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="18" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@R_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonS" disable="true" layoutX="645.0" layoutY="441.0" mnemonicParsing="false" onMousePressed="#buttonSEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="19" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@S_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonT" disable="true" layoutX="693.0" layoutY="441.0" mnemonicParsing="false" onMousePressed="#buttonTEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="20" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@T_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonU" disable="true" layoutX="549.0" layoutY="481.0" mnemonicParsing="false" onMousePressed="#buttonUEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="21" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@U_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonV" disable="true" layoutX="597.0" layoutY="481.0" mnemonicParsing="false" onMousePressed="#buttonVEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="22" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@V_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonW" disable="true" layoutX="645.0" layoutY="481.0" mnemonicParsing="false" onMousePressed="#buttonWEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="23" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@W_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonX" disable="true" layoutX="693.0" layoutY="481.0" mnemonicParsing="false" onMousePressed="#buttonXEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="24" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@X_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonY" disable="true" layoutX="549.0" layoutY="521.0" mnemonicParsing="false" onMousePressed="#buttonYEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="25" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@Y_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+          <Button fx:id="buttonZ" disable="true" layoutX="597.0" layoutY="521.0" mnemonicParsing="false" onMousePressed="#buttonZEvent" textFill="BLUE">
+           <font>
+              <Font name="Avenir Next Regular" size="13.0" />
+           </font>
+           <graphic>
+            <ImageView id="26" fitHeight="30.0" fitWidth="30.0" layoutX="670.0" layoutY="130.0">
+               <image>
+                  <Image url="@Z_unpress.png" />
+               </image>
+            </ImageView>
+             </graphic>
+         </Button>
+            <RadioButton fx:id="level2" layoutX="696.0" layoutY="75.0" mnemonicParsing="false" text="Level 2" textFill="#0a0101">
+               <toggleGroup>
+                  <ToggleGroup fx:id="level" />
+               </toggleGroup>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="level1" layoutX="522.0" layoutY="75.0" mnemonicParsing="false" text="Level 1" textFill="#0a0101" toggleGroup="$level">
+               <font>
+                  <Font size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="level3" layoutX="522.0" layoutY="104.0" mnemonicParsing="false" text="Level 3" textFill="#0a0101" toggleGroup="$level">
+               <font>
+                  <Font size="15.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="level4" layoutX="696.0" layoutY="104.0" mnemonicParsing="false" text="Level 4" toggleGroup="$level">
+               <font>
+                  <Font size="15.0" />
+               </font></RadioButton>
+            <Button fx:id="changeWord" layoutX="564.0" layoutY="144.0" mnemonicParsing="false" onMousePressed="#changeWord" text="Click To Play Or Change Word" />
+            <TextArea fx:id="save" layoutX="530.0" layoutY="190.0" prefHeight="55.0" prefWidth="230.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextArea>
+            <AnchorPane fx:id="container_start" layoutX="65.0" layoutY="86.0">
+               <children>
+                  <ImageView fx:id="start_image" fitHeight="486.0" fitWidth="386.0">
+                     <image>
+                        <Image url="@start_image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="container_first_guess_wrong" layoutX="65.0" layoutY="86.0" visible="false">
+               <children>
+                  <ImageView fx:id="first_guess_wrong_image" fitHeight="486.0" fitWidth="386.0">
+                     <image>
+                        <Image url="@first_guess_wrong_image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="container_second_guess_wrong" layoutX="65.0" layoutY="86.0" visible="false">
+               <children>
+                  <ImageView fx:id="second_guess_wrong_image" fitHeight="486.0" fitWidth="386.0">
+                     <image>
+                        <Image url="@second_guess_wrong_image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="container_third_guess_wrong" layoutX="65.0" layoutY="86.0" visible="false">
+               <children>
+                  <ImageView fx:id="third_guess_wrong_image" fitHeight="486.0" fitWidth="386.0">
+                     <image>
+                        <Image url="@third_guess_wrong_image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="container_fourth_guess_wrong" layoutX="65.0" layoutY="86.0" visible="false">
+               <children>
+                  <ImageView fx:id="fourth_guess_wrong_image" fitHeight="486.0" fitWidth="386.0">
+                     <image>
+                        <Image url="@fourth_guess_wrong_image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="container_fifth_guess_wrong" layoutX="65.0" layoutY="86.0" visible="false">
+               <children>
+                  <ImageView fx:id="fifth_guess_wrong_image" fitHeight="486.0" fitWidth="386.0">
+                     <image>
+                        <Image url="@fifth_guess_wrong_image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="container_lose" layoutX="65.0" layoutY="86.0" visible="false">
+               <children>
+                  <ImageView fx:id="loss_image" fitHeight="486.0" fitWidth="386.0">
+                     <image>
+                        <Image url="@loss_image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="container_win" layoutX="65.0" layoutY="86.0" visible="false">
+               <children>
+                  <ImageView fx:id="win_image" fitHeight="486.0" fitWidth="386.0">
+                     <image>
+                        <Image url="@win_image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" layoutX="532.0" layoutY="46.0" prefHeight="21.0" prefWidth="240.0" text="Select Difficulty And Click to Play">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <AnchorPane layoutX="40.0" layoutY="30.0" prefHeight="0.0" prefWidth="455.0">
+               <children>
+                  <ImageView fitHeight="42.0" fitWidth="65.0">
+                     <image>
+                        <Image url="@title_H.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="65.0" layoutX="65.0">
+                     <image>
+                        <Image url="@title_A.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="65.0" layoutX="130.0">
+                     <image>
+                        <Image url="@title_N.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="65.0" layoutX="195.0">
+                     <image>
+                        <Image url="@title_G.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="65.0" layoutX="260.0">
+                     <image>
+                        <Image url="@title_M.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="65.0" layoutX="325.0">
+                     <image>
+                        <Image url="@title_A.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="65.0" layoutX="390.0">
+                     <image>
+                        <Image url="@title_N.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="savegame" disable="true" layoutX="770.0" layoutY="571.0" mnemonicParsing="false" onMousePressed="#savegame" prefHeight="30.0" prefWidth="55.0" text="save">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="load" layoutX="770.0" layoutY="530.0" mnemonicParsing="false" onMousePressed="#load" prefHeight="30.0" prefWidth="55.0" text="Load">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="mainpage" layoutX="624.0" layoutY="571.0" mnemonicParsing="false" onMousePressed="#mainpage" text="Main Page">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

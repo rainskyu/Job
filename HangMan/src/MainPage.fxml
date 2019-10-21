@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangManButtonController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@20091026_573ab28da251f26de112J03DPh0Hh4h5.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="123.0" layoutY="240.0" prefHeight="160.0" prefWidth="400.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="100.0">
+               <image>
+                  <Image url="@title_H.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="100.0">
+               <image>
+                  <Image url="@title_A.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="200.0">
+               <image>
+                  <Image url="@title_N.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="157.0" layoutY="80.0">
+               <image>
+                  <Image url="@title_A.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="57.0" layoutY="80.0">
+               <image>
+                  <Image url="@title_M.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="300.0">
+               <image>
+                  <Image url="@title_G.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="257.0" layoutY="80.0">
+               <image>
+                  <Image url="@title_N.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="play" layoutX="123.0" layoutY="418.0" mnemonicParsing="false" onMouseClicked="#play" onMousePressed="#play" prefHeight="38.0" prefWidth="172.0" text="Start New Game">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="temp" layoutX="374.0" layoutY="418.0" mnemonicParsing="false" onMousePressed="#continuetoplay" prefHeight="38.0" prefWidth="172.0" text="Continue To Play">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

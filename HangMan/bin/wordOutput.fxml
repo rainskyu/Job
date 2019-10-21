@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangManButtonController">
+   <children>
+      <Button fx:id="Confirm" layoutX="1190.0" layoutY="550.0" mnemonicParsing="false" onAction="#confirmEvent" onMousePressed="#confirmEvent" text="Confirm" />
+      <TextArea fx:id="textArea" layoutX="7.0" layoutY="30.0" onDragDetected="#outPutTextArea" onMouseDragged="#outPutTextArea" prefHeight="511.0" prefWidth="1242.0" />
+      <Label layoutX="594.0" layoutY="2.0" prefHeight="17.0" prefWidth="164.0" text="Words Generated">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="541.0" text="After you've choosen which mode you wish to choose words from.....  ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="562.0" text="Please Wait about 30 secods, drag empty space, you will see the words have been generated....">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

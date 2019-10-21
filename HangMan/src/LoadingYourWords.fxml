@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#loading" prefHeight="101.0" prefWidth="305.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangManButtonController">
+   <center>
+      <Label fx:id="lb" alignment="CENTER" contentDisplay="CENTER" text="Loading The words......" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </center>
+   <bottom>
+      <Button fx:id="play2" alignment="BOTTOM_CENTER" mnemonicParsing="false" onMousePressed="#play2" text="PLAY" visible="false" BorderPane.alignment="BASELINE_CENTER" />
+   </bottom>
+</BorderPane>

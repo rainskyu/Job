@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangManButtonController">
+   <top>
+      <Label prefHeight="5.0" prefWidth="315.0" text="Please choose which mode you wish to choose words from." BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <RadioButton fx:id="sequential" mnemonicParsing="false" text="Sequential" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="75.0" />
+         </BorderPane.margin>
+         <toggleGroup>
+            <ToggleGroup fx:id="Mode" />
+         </toggleGroup>
+      </RadioButton>
+   </center>
+   <right>
+      <RadioButton fx:id="parallel" mnemonicParsing="false" prefHeight="17.0" prefWidth="71.0" text="Parallel" toggleGroup="$Mode" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="75.0" />
+         </BorderPane.margin>
+      </RadioButton>
+   </right>
+   <bottom>
+      <Button fx:id="submit" mnemonicParsing="false" onAction="#submitEvent" onMousePressed="#submitEvent" text="Submit" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>
